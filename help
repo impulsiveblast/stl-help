@@ -1,0 +1,19 @@
+// vector commands
+vector<data_structure>v;
+// for e.g vector<pair<int,int>>v,vector<struct_name>v;
+v.push_back(ele)
+// inserting element at the end
+v.pop_back()
+// deleting element from end;
+sort(v.begin(),v.end());
+sort(arr,arr+n)
+sort(v.begin(),v.end(),greater<data_structure>());
+
+// for eg there is a vector of structure;
+bool comp(struct_name e1,struct_name e2){
+int avg1 =( e1.maths+e1.saskrit+e1.hindi)/3;
+int avg2 = ( e2.maths+e2.saskrit+e2.hindi)/3;
+return avg1>avg2;
+}
+
+sort(v.begin(),v.end(),comp);
