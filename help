@@ -41,4 +41,6 @@ using namespace std;
 		<< (upper - v.begin() + 1) << '\n';
 
 	return 0;
-}*/
+}
+
+//vector,list,map,multi map,--important topics//
