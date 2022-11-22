@@ -1,0 +1,66 @@
+#include<iostream>
+#include<vector>  //including its library or use  #include<bits/stdc++.h>
+using namespace std;
+
+//implementing vector using stl functions
+
+int main()
+{
+  vector<int> v;
+  
+  cout<<"size of vector at present:"<<v.capacity()<<endl;  //checks size of vector
+  
+  v.push_back(1);  //inserting 1 at the back
+  cout<<"size of vector at present:"<<v.capacity()<<endl; //size after inserting 1 element at push_back will show 1 or 2^0
+  
+  v.push_back(2);
+  
+  cout<<"size of vector at present:"<<v.capacity()<<endl;//size after inserting 2nd element at push_back will show 2^1
+  
+  
+  
+  //size =no of elements in vector ,capacity=no of elements that can be stored
+  
+  cout<<v.size()<<endl; //returns 2
+  
+  cout<<v.at(1)<<endl; // returns vaue at 1st index
+  
+  v.pop_back(); //removes topmost element and decreases size while capacity remains same
+  
+  for(int i:v) //to print all elements of vector
+  {
+      cout<<i<<endl;
+  }
+  
+  
+  v.clear() ; //all elements gets deleted
+  
+  for(int i:v) //to print all elements of vector after clearing all
+  {
+      cout<<i<<endl;
+  }
+  
+  v.push_back(1);
+  v.push_back(2);
+  v.push_back(3);
+  
+ cout<<v.size()<<endl;
+  
+  vector<int> a(v); //declared a vector a which copies all values of v in itself
+  
+  for(int j:a)
+  {
+      cout<<j<<endl;
+  }
+  
+  vector<int> b(5,1);  //declared a vector b with all 5 elements 1
+  
+  for(int k:a)
+  {
+      cout<<k<<endl;
+  }
+  
+  return 0;
+  
+}
+  
