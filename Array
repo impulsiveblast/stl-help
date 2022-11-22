@@ -1,0 +1,19 @@
+#include<iostream>
+#include<array>
+using namespace std;
+
+//implementing array using stl functions
+
+int main()
+{
+    array<int,4> a={1,2,3,4}; //declaration
+    
+    cout<<"Element at 2nd position :"<<a.at(2)<<endl;  //value at 2nd position
+    
+    int b=a.size();
+    
+    cout<<b;
+    
+    return 0;
+    
+}
