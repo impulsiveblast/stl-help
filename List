@@ -1,0 +1,33 @@
+#include <iostream>
+#include<list>
+using namespace std;
+
+int main()
+{
+    list<int> l;  //declaring list
+    
+    l.push_back(1);  //inserting from back
+    l.push_back(2);  
+    
+    l.push_front(3);  //inserting from front
+    
+    for(int i:l)     //printing elements from list
+    {
+        cout<<i<<endl;
+    }
+    
+    l.erase(l.begin());
+    
+   cout<<l.size()<<endl;
+   
+   list<int> a(l);   //copying list l inside a 
+   
+   list<int> b(5,30);  //declaring b s.t. 5 locations and all illed with 30
+   
+   for(int i:b)
+   {
+       cout<<i<<endl;
+   }
+   
+    return 0;
+}
