@@ -28,6 +28,12 @@ int main()
     {
         cout<<i.first<<" "<<i.second<<endl;                //values get printed in sorted order first and second part both gets printed
     }
+     
+     
+     m.erase(2);      //first as well as 2nd part of 2 gets  deleted in the map
+     
+     //insert and delete o(logn)
+    
     
  
     return 0;
