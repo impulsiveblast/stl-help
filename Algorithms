@@ -1,0 +1,57 @@
+#include<iostream>
+
+#include<algorithm>
+#include<vector>
+
+using namespace std;
+
+int main()
+{
+ 
+   //binary search
+   //sorted array/vector required 
+   
+   vector<int> v;
+   v.push_back(1);
+   v.push_back(3);
+   v.push_back(5);  //condition for binary search:array or vector should be in sorted
+   v.push_back(6);                 //here program runs as the elements are arranged in sorted order
+   
+   cout<<binary_search(v.begin(),v.end(),3)<<endl;     //algorithm for binary search
+                                                
+   cout<<upper_bound(v.begin(),v.end(),3)-v.begin()<<endl;       //similar function for upper and lower bound
+   cout<<lower_bound(v.begin(),v.end(),3)-v.begin()<<endl;
+                                                
+    int a=9;
+    int b=6;
+    
+    swap(a,b);   //to swap 2 numbers
+    
+    cout<<a<<" "<<b<<endl;
+    
+    //reverse a string
+    
+    string c="bittu";
+    
+    reverse(c.begin(),c.end());   //function to reverse
+    
+    cout<<"after reverse:"<<c;
+    
+    
+    
+    rotate(v.begin(),v.begin()+1,v.end());       //rotate the vector
+    
+    for(int i:v)
+    {
+        cout<<i<<" "<<endl;
+    }
+    
+   sort(v.begin(),v.end()); //here sort algorithm works with help of 3 sorts quick,heap,insertion
+    
+    for(int i:v)
+    {
+        cout<<i<<" "<<endl;
+    }
+    
+    return 0;
+}
