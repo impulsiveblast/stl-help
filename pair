@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+                                 //stl application
+int main()
+{
+     pair<int,string> p;  //a pair of 2 same or diffrent datatypes can be made dynamically
+     p=make_pair(2,"pappu"); //or p={2,"pappu"} both are valid
+     p={3,"abc"};
+     cout<<p.first<<" "<<p.second<<endl;  //p.first resembles int part and second is string part
+     
+     cin>>p.first;  //first as well as second values can be edited in a pair
+    //  pair<int,string> p1=p;  p1 copies p and no further changes can happen in p1
+    // p1.first=2 ...no change would happen
+    
+    //  pair<int,string> &p1=p; p1 stores p as reference only hence can be edited
+    //p1.first=2;   ....int part gets changed to 2
+     
+     //pair array:corresponding elements are used when 2 arrays are compared having same size
+     int a[]={1,2,3};
+     int b[]={3,4,5};
+     
+     pair<int,int> p0[3];
+     p0[0]={1,3};
+     p0[1]={2,4};
+     p0[2]={3,5};
+     
+     for(int i=0;i<3;i++)
+     {
+         cout<<p0[i].first<<" "<<p0[i].second<<endl;
+     }
+     
+     
+     cout<<endl;
+     swap(p0[0],p0[2]);  //swap function swaps 2 pairs from given array
+     for(int i=0;i<3;i++)
+     {
+         cout<<p0[i].first<<" "<<p0[i].second<<endl;
+     }
+      
+     
+     return 0;
+}
