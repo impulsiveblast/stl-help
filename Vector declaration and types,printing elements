@@ -1,0 +1,65 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+//  void printvec(vector<int> v){      //printing all values using a void function
+//      for(int i=0;i<v.size();i++)
+//      {
+//          cout<<v[i]<<endl;
+//      }
+//      cout<<endl;
+//  }
+ 
+                                 //stl application
+int main()
+{
+      //Vectors are just dynamic sized arrays
+       vector<int> v;  //any datatype can be inserted ...presently we are using int
+       
+       int n;
+       cin>>n;
+       
+       for(int i=0;i<n;i++)
+       {
+           int x;
+           cin>>x;
+           v.push_back(x);
+       }
+       
+       //direct printing the values of the contents of vectors using for loop
+        cout<<endl;
+       for(int i=0;i<v.size();i++)   //v.size()==size of vector v time complexity=0(1)
+       {
+          
+           cout<<v[i]<<endl;
+           
+       }
+       
+       
+       //push_back() nad pop_back() has time complexity of 0(1)
+       
+       vector<int> v2=v; //vector copy is possible just like in case of pairs 0(n)
+        // vector<int> &v2=v;  no copy of vector has formed and the vector can be edited further
+       
+       vector<string> v3;    //vector of strings
+       
+       string s;
+       cin>>n;
+       for(i=0;i<n;i++)
+       {
+           cin>>s;
+           v3.push_back(s);
+       }
+       
+       for(i=0;i<n;i++)
+       {
+           
+           cout<<v3[i]<<" ";     //printing all values form vector of strings
+       }
+       
+       
+       
+       
+       
+     
+     return 0;
+}
