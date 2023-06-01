@@ -1,0 +1,40 @@
+//sequential
+->Vectors
+->Dtack
+->Queue
+->Pair
+
+//ordered
+->maps   //values are stored in ordered form
+->multimap
+->set
+->multiset
+
+Unordered
+->unordered map
+->unordered set 
+
+Nested containers: A container within a container
+-> vector<vector<int>>
+->map<int,vector<int>>
+->set<pair<int,string>>
+->vector<map<int,set<int>>
+
+itrators
+->points the memory address of containers
+
+Algorithms:Algorithms of Data structures
+->upper bound
+->lower bound
+->sort 
+->max element
+->min element
+->accumulate
+->reverse
+->count
+->find
+->next permurations
+->prev permutations
+
+Functors:classes can be used and functions
+
