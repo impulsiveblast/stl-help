@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+ void printvec(vector<int> v)
+ {
+     int i;
+     for(i=0;i<v.size();i++)
+     {
+         cout<<v[i]<<" ";
+     }
+     
+     cout<<endl;
+ }
+ 
+ int main()
+ 
+  {                                         
+    
+    vector<vector<int> > v ;                 //vector containing vectors
+     
+     
+    vector<int> v1;
+    
+    int n,i,x;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cin>>x;
+        v1.push_back(x);
+    }
+    
+    v.push_back(v1);                         //takke v1 vector inside the big vector v
+    
+    
+     for(i=0;i<v.size();i++)
+     {
+         printvec(v[i]);
+     }  
+     
+     
+   
+    return 0;
+  }
