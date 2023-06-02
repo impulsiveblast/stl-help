@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+ int main()
+{
+    
+    vector<int> v={1,2,5,4,7};                                 //since maps and sets donot have indexes associated so we use itrators
+                                     //v.begin()->v[0] and v.end()->v[v.size()]  or next to last
+   for(int i=0;i<v.size();i++)
+   {
+       cout<<v[i]<<" ";
+   }
+   
+   cout<<endl;
+   
+   vector<int> ::iterator it=v.begin();     //declaring itrator named it for vector. it is the pointer to address of an element in vector it points the 1st element at begining 
+   
+   cout<<(*it)<<endl;
+   cout<<(*(it+1))<<endl;         //printing 1st and second elements respectively in second itrator started pointing 2nd value
+   
+   //it++ can also be done 
+   
+   for(it=v.begin();it!=v.end();++it)    //it shouldn't reach end of vector v
+   {
+       cout<<*(it)<<" ";
+   }
+                                             //it++ is used in maps and sets as elements are not located at continuous locations
+    
+    cout<<endl;                                         
+   vector<pair<int,int>> v2={{2,4},{3,4},{4,5}};
+   vector<pair<int,int>> ::iterator it2=v2.begin();
+   
+  for(it2=v2.begin();it2!=v2.end();++it2)    //it shouldn't reach end of vector v
+  {
+      cout<<(*it2).first<<" "<<(*it2).second<<endl;
+  }
+   
+//   for(it2=v2.begin();it2!=v2.end();++it2)    //it shouldn't reach end of vector v
+//   {
+//       cout<<(it2->first)<<" "<<(it2->second)<<endl;   //this is also allowed
+//   }
+   
+   
+   
+   return 0;
+} 
