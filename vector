@@ -48,8 +48,8 @@ int main()
   
   vector<int> a(v); //declared a vector a which copies all values of v in itself
   
-  for(int j:a)
-  {
+  for(auto j:a)                         //values at indexes of a are getting copied at j 
+  {                                     //using auto instead of int so that it identifies j without saying
       cout<<j<<endl;
   }
   
