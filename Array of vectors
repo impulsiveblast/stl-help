@@ -1,0 +1,75 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+ void printvec(vector<int> v)
+ {
+     int i;
+     for(i=0;i<v.size();i++)
+     {
+         cout<<v[i]<<" ";
+     }
+     
+     cout<<endl;
+ }
+ 
+ int main()
+ 
+  {                                         //Array of vectors
+        
+     int n,i,j;
+
+     cin>>n;
+     vector<int> v[n];              //10 diffrent vetors created with 0 size at present
+     
+     for(i=0;i<n;i++)
+     {
+         int n2;
+         cin>>n2;                           //in each of the n vectors diffrent value of n2 are takken which is its size and n2 elements are inserted in each vector
+         for(j=0;j<n2;j++)
+         {
+             int x;
+             cin>>x;
+             v[i].push_back(x);
+             
+         }
+     }
+     
+     
+    //   for(i=0;i<n;i++)
+    //  {
+    //                                  //in each of the n vectors diffrent value of n2 are takken which is its size and n2 elements are inserted in each vector
+    //      for(j=0;j<v[i].size();j++)
+    //      {
+    //          cout<<v[i][j]<<" ";
+    //      }
+    //  }
+     
+      for(i=0;i<n;i++)
+     {
+         printvec(v[i]);                     //printing all the vectors available to us
+         
+     }
+     
+     
+     
+     
+     
+   
+   
+   
+//   for(i=0;i<n;i++)
+//      {
+//                                             //printing values from all the vectors formed                         
+//          for(j=0;j<n2;j++)
+//          {
+//              cout<<v[i][j]<<" ";
+             
+//          }
+         
+//          cout<<endl;
+//      }
+     
+     
+   
+    return 0;
+  }
