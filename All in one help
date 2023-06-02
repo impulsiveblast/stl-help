@@ -39,7 +39,8 @@ using namespace std;
 		<< (lower - v.begin() + 1) << '\n';
 	cout << "upper_bound for 6 at position "
 		<< (upper - v.begin() + 1) << '\n';
-
+        auto a1=1.0;    //determines datatype of a via auto
+	
 	return 0;
 }
 
