@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+               //stack:LIFO
+               //queus:FIFO
+ int main()
+{
+    stack<int> s;              //type of data structure we need to insert in stack
+    
+    //top():value inserted at the end
+    
+    s.push(2);
+    s.push(8);
+    s.push(9);
+    s.push(7);
+    
+    while(!s.empty())
+    {
+        cout<<s.top()<<endl;
+        s.pop();                          //so as to remove element just after printing it
+    }
+        
+    queue<string> q;
+                                             //as there is top() for stack there is front() for queu
+
+    q.push("abc");
+    q.push("sdfr");
+    q.push("india");
+    q.push("uganda");
+    
+    while(!q.empty())
+    {
+        cout<<q.front()<<endl;
+        
+        q.pop();                                  //so as to remove element just after printing it
+    }
+    
+    
+
+   return 0;
+} 
