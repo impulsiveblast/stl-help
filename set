@@ -1,34 +1,38 @@
-#include<iostream>
-#include<set>
-
+#include<bits/stdc++.h>
 using namespace std;
-
+ 
+ void print(set<string> s)
+ {
+     for(auto i:s)
+     {
+         cout<<i<<endl;
+     }
+     cout<<endl;
+ }
+ 
 int main()
 {
-    set<int> s;
     
-    s.insert(1);   //to insert an element in set
-    s.insert(2);
-    s.insert(3);
-    s.insert(5);
-    
-    for(int i:s)
-    {
-        cout<<i<<endl;     //printing all elements of set
-    }
-    
-   s.insert(2);
-   s.insert(2);
-   s.insert(2);
-   s.insert(3);
-   s.insert(5);
+  //sets are basically maps without values only keys
+   set<string> s;     //set declaration
    
-   for(int i:s)
-    {
-        cout<<i<<endl;     //printing all elements of set
-    }
-    
-    
+   s.insert("abc");                           //   whatever we store it gets stored in sorted order inside set
+
+   s.insert("bsdk");
+   s.insert("habro");
+   s.insert("komediking");  //o(1)
+   
+   it=s.find("abc")    //o(1) returns the iterator where abc is stored
+   
+   
+   
+   print(s);
+   
+   
+   
+   
  
-    return 0;
-}
+
+
+   return 0;
+} 
