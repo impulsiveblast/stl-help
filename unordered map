@@ -1,0 +1,24 @@
+//hash maps
+
+//if declared globally a[10e7] it would easily adjust 10e7  
+
+//size of array in array hashing depends on the heighst value of number present in array 
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    
+    cin>>n;
+    
+    unordered_map<int,int> m;
+    
+    //no order is followed while storing values inside unordered map storing depends upon the compiler
+    
+    //time complexity for storing and fetching in unordered map in O(1) in average and best case worst case=O(N)
+    
+    //unordered map=int,double,char,string
+    
+}
