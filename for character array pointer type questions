@@ -1,0 +1,16 @@
+ string s="";
+//char* S pointer was already assinged to us is input
+    
+      while(*S!='\0')  //*S to decoe the value at S pointer
+    {
+        s+=*S;
+        ++S;
+    }
+    
+    reverse(s.begin(),s.end());
+    
+    char *p=new char[s.size()+1];    //p points to a new character array which is newly made 
+    
+    
+    strcpy(p,s.c_str());  //copiying the values at s string by converting it to a pointer to pointer p
+    
