@@ -16,7 +16,10 @@ int main()
           break;
        }
     }
-    
+    if(n==1)
+   {
+      
+
     cout<<is_prime;
     
     return 0;
