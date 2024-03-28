@@ -8,7 +8,7 @@ int main()
     
     bool is_prime=true;
     
-    for(int i=2;i*i<n;i++)   //only iterating till the square root of a number so that length of checking prime factors would be less
+    for(int i=2;i*i<=n;i++)   //only iterating till the square root of a number so that length of checking prime factors would be less
     {
        if(n%i==0)
        {
