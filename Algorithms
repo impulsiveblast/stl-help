@@ -34,7 +34,11 @@ int main()
     string c="bittu";
     
     reverse(c.begin(),c.end());   //function to reverse
-    
+
+    //clear a vector completely:
+    v.clear();
+//v={}
+
     cout<<"after reverse:"<<c;
     
     
