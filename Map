@@ -73,7 +73,7 @@ print(m);
 // in strings question unordered_maps can be used as its time complexity is very low....
 // declaration:unordered_map<a,b> m; where a nad b are same or diffrent datatypes
 //insertion in case of unordered maps:O(1)
-
+//traversal of unordered map is exactly same as ordered map
 
 
    
