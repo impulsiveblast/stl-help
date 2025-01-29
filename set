@@ -28,8 +28,12 @@ int main()
    
    print(s);
    
-   
-   
+   //reverse pointer for set 
+//right to left
+   for (rit = s.rbegin(); rit != s.rend(); rit++) 
+    {
+       cout << *rit << " ";
+     }
    
  
 
